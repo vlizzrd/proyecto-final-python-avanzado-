@@ -19,7 +19,7 @@ def crear_plantilla(path="templates/boleta_template.docx"):
     doc.save(path)
     print(f"Plantilla creada en: {path}")
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     import os
     os.makedirs("templates", exist_ok=True)
     crear_plantilla()
@@ -41,6 +41,7 @@ def generar_datos(path="datos_calificaciones.xlsx"):
     df.to_excel(path, index=False)
     print(f"Archivo de ejemplo creado en: {path}")
 
-if _name_ == "_main_":
+if __name__ == "_main_":
 
     generar_datos()
+
