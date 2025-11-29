@@ -32,7 +32,7 @@ def generar_datos(path="datos_calificaciones.xlsx"):
 
     data = [
         {"id": "A001", "nombre": "Ana Carolina", "email": "ana.carolina@example.com", "tipo": "grado", "nota": 85},
-        {"id": "A002", "nombre": "Luis Sarcos", "email": "kuis.sarcos@example", "tipo": "grado", "nota": 58},
+        {"id": "A002", "nombre": "Luis Sarcos", "email": "luis.sarcos@example", "tipo": "grado", "nota": 58},
         {"id": "A003", "nombre": "Carla Rodriguez", "email": "carla.rodriguez@example.com", "tipo": "postgrado", "nota": 92},
         {"id": "A004", "nombre": "Pedro Soto", "email": "pedro.soto@example.com", "tipo": "postgrado", "nota": 47},
         {"id": "A005", "nombre": "Daniel Espitia", "email": "daniel.espitia@example.com", "tipo": "grado", "nota": 74},
@@ -42,4 +42,5 @@ def generar_datos(path="datos_calificaciones.xlsx"):
     print(f"Archivo de ejemplo creado en: {path}")
 
 if _name_ == "_main_":
+
     generar_datos()
